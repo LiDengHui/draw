@@ -1,7 +1,7 @@
 const ghpages = require('gh-pages');
 const execa = require('execa');
 
-execa.commandSync('npx parcel build',{
+execa.commandSync('npm run build',{
     stdout: process.stdout
 });
 ghpages.publish('dist', function(err) {

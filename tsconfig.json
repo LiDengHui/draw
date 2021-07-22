@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "strict": true,
+    "module": "CommonJS",
     "target": "esnext",
-    "moduleResolution": "Node",
+    "sourceMap": true,
+    "allowJs": true,
     "lib": [
       "esnext",
       "dom"
     ]
-  }
+  },
+  "include":["./src/"]
 }
